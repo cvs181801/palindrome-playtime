@@ -7,13 +7,16 @@
 //if they do, return true.  If they don't return false.
 
 function caseInsensitivePalindromeChecker(text) {
-    return text.toLowerCase().split("");
+        text.toLowerCase()
+        .split("");
 
-//     //clone the array 
-//     const halfOriginal = text.slice(0, clonedArray.length + 1);
-//     const clonedArray = [...text];
+       //clone the array 
+       const halfOriginal = text.slice(0, clonedArray.length + 1);
+       const clonedArray = [...text];
+       console.log(halfOriginal);
+       console.log(clonedArray);
 //     //reverse the cloned array's order
-//     clonedArray.reverse();
+       //clonedArray.reverse();
 //     const halfCloned = clonedArray.slice(0, clonedArray.length + 1);
 //     // check to see if the first part of the cloned array matches the first part of the original array
 //     //if it is, return true
