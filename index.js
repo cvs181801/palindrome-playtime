@@ -7,7 +7,7 @@
 //if they do, return true.  If they don't return false.
 
 function caseInsensitivePalindromeChecker(text) {
-    text.toLowerCase()
+    text.toLowerCase();
     return text;
 //     .split("");
 //     //clone the array 
