@@ -33,7 +33,7 @@ function caseInsensitivePalindromeChecker(text) {
              console.log(false);
          }     
  }
- console.log(caseInsensitivePalindromeChecker("HFLSDDSFfdd"));
+ console.log(caseInsensitivePalindromeChecker("aaaBbaaA"));
 
 // //make the button work
 // goButton.addEventListener('click', (e) => {
