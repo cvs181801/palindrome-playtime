@@ -21,11 +21,13 @@ function caseInsensitivePalindromeChecker(text) {
      // check to see if the reversed cloned array matches the original array
          if (JSON.stringify(clonedArray) === JSON.stringify(originalArray) ) {
     //if it is, return true
+            console.log("yep");
             renderResult.innerHTML = "";
             renderResult.innerHTML = `Yes, it's a palindrome!`;
             resultDiv.appendChild(renderResult); 
              //else return false
          } else {
+             console.log("nope");
             renderResult.innerHTML = "";
             renderResult.innerHTML = `No, it's not a palindrome.`;
             resultDiv.appendChild(renderResult); 
@@ -34,7 +36,7 @@ function caseInsensitivePalindromeChecker(text) {
  //console.log(caseInsensitivePalindromeChecker("hhOhh"));
 
 //make the button work
-goButton.addEventListener('click', (e) => {
+goButton.addEventListener('click', function(e) {
     e.preventDefault;
     console.log("it worked!!");
     //return caseInsensitivePalindromeChecker(string.value);
