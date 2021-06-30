@@ -16,13 +16,13 @@ function caseInsensitivePalindromeChecker(text) {
        const clonedArray = [...originalArray];
        const half = originalArray.length/2 + 1;
        const halfOriginal = originalArray.slice(0, half);
-       console.log(halfOriginal);
-       console.log(clonedArray);
+       console.log("Half Original:", halfOriginal);
        
 //     //reverse the cloned array's order
        clonedArray.reverse();
-       console.log(clonedArray);
-//     const halfCloned = clonedArray.slice(0, clonedArray.length + 1);
+       console.log("Cloned Array:", clonedArray);
+       const halfCloned = clonedArray.slice(0, half);
+       console.log("halfCloned:", halfCloned);
 //     // check to see if the first part of the cloned array matches the first part of the original array
 //     //if it is, return true
 //         if (halfCloned === halfOriginal ) {
