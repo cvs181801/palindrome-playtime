@@ -30,6 +30,6 @@ function caseInsensitivePalindromeChecker(text) {
 //make the button work
 goButton.addEventListener('click', (e) => {
     e.preventDefault;
-    console.log('it worked!!');
+    console.log("it worked!!");
     return caseInsensitivePalindromeChecker(string.value);
 })
