@@ -5,14 +5,16 @@
 //convert all letters to lower case.  
 //Check to see if they match (use the inner 1 or 2 characters to start out both).
 //if they do, return true.  If they don't return false.
+let originalArray = [];
 
 function caseInsensitivePalindromeChecker(text) {
-        text.toLowerCase()
-        .split("");
+        //text.toLowerCase()
+        //.split("");
 
        //clone the array 
+       originalArray = text.toLowerCase().split("");
+       const clonedArray = [...text.toLowerCase().split("")];
        
-       const clonedArray = [...text];
        const halfOriginal = text.slice(0, clonedArray.length + 1);
        console.log(halfOriginal);
        console.log(clonedArray);
