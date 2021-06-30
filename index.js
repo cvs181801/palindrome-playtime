@@ -27,7 +27,7 @@ function caseInsensitivePalindromeChecker(text) {
        console.log(halfOriginal.value);
      // check to see if the first part of the cloned array matches the first part of the original array
      
-         if (halfCloned === halfOriginal ) {
+         if (halfCloned == halfOriginal ) {
     //if it is, return true
              console.log(true);
              //else return false
