@@ -5,7 +5,7 @@ const goButton = document.getElementById("go-btn");
 let originalArray = [];
 
 function caseInsensitivePalindromeChecker(text) {
-        
+        originalArray.push(text);
        //convert all letters to lower case.  
        originalArray = text.toLowerCase().split("");
        //clone the array
@@ -25,7 +25,7 @@ function caseInsensitivePalindromeChecker(text) {
              console.log(false);
          }     
  }
- console.log(caseInsensitivePalindromeChecker("hhOhh"));
+ //console.log(caseInsensitivePalindromeChecker("hhOhh"));
 
 //make the button work
 goButton.addEventListener('click', (e) => {
