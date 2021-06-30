@@ -8,26 +8,23 @@
 let originalArray = [];
 
 function caseInsensitivePalindromeChecker(text) {
-        //text.toLowerCase()
-        //.split("");
-
+        
        //clone the array 
        originalArray = text.toLowerCase().split("");
        const clonedArray = [...originalArray];
-       const half = originalArray.length/2 + 1;
-       const halfOriginal = originalArray.slice(0, half);
-       console.log("Half Original:", halfOriginal);
+       //const half = originalArray.length/2 + 1;
+       //const halfOriginal = originalArray.slice(0, half);
+       //console.log("Half Original:", halfOriginal);
        
      //reverse the cloned array's order
        clonedArray.reverse();
        console.log("Cloned Array:", clonedArray);
-       const halfCloned = clonedArray.slice(0, half);
-       console.log("halfCloned:", halfCloned);
-       console.log(halfCloned.value);
-       console.log(halfOriginal.value);
-     // check to see if the first part of the cloned array matches the first part of the original array
+       //const halfCloned = clonedArray.slice(0, half);
+       console.log("Original Array:", originalArray);
+       
+     // check to see if the reversed cloned array matches the original array
      
-         if (halfCloned == halfOriginal ) {
+         if (JSON.stringify(clonedArray) === JSON.stringify(originalArray) ) {
     //if it is, return true
              console.log(true);
              //else return false
