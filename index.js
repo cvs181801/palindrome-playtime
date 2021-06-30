@@ -18,8 +18,10 @@ function caseInsensitivePalindromeChecker(text) {
        const halfOriginal = originalArray.slice(0, half);
        console.log(halfOriginal);
        console.log(clonedArray);
+       
 //     //reverse the cloned array's order
-       //clonedArray.reverse();
+       clonedArray.reverse();
+       console.log(clonedArray);
 //     const halfCloned = clonedArray.slice(0, clonedArray.length + 1);
 //     // check to see if the first part of the cloned array matches the first part of the original array
 //     //if it is, return true
