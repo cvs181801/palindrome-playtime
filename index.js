@@ -1,7 +1,7 @@
 //grab the elements from the DOM
 const string = document.getElementById("textBox");
 const goButton = document.getElementById("go-btn");
-const resultDiv = document.getElementById("parentDiv");
+const parentDiv = document.getElementById("resultDiv");
 const renderResult = document.createElement("p");
 
 let originalArray = [];
@@ -24,13 +24,13 @@ function caseInsensitivePalindromeChecker(text) {
             console.log("yep");
             renderResult.innerHTML = "";
             renderResult.innerHTML = `Yes, it's a palindrome!`;
-            resultDiv.appendChild(renderResult); 
+            parentDiv.appendChild(renderResult); 
              //else return false
          } else {
              console.log("nope");
             renderResult.innerHTML = "";
             renderResult.innerHTML = `No, it's not a palindrome.`;
-            resultDiv.appendChild(renderResult); 
+            parentDiv.appendChild(renderResult); 
          }     
  }
  //console.log(caseInsensitivePalindromeChecker("hhOhh"));
