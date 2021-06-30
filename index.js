@@ -1,6 +1,8 @@
 //grab the elements from the DOM
 const string = document.getElementById("textBox");
 const goButton = document.getElementById("go-btn");
+const resultDiv = document.getElementById("parentDiv");
+const renderResult = document.createElement("p");
 
 let originalArray = [];
 
@@ -19,10 +21,14 @@ function caseInsensitivePalindromeChecker(text) {
      // check to see if the reversed cloned array matches the original array
          if (JSON.stringify(clonedArray) === JSON.stringify(originalArray) ) {
     //if it is, return true
-             console.log(true);
+            renderResult.innerHTML = "";
+            renderResult.innerHTML = `Yes, it's a palindrome!`;
+            resultDiv.appendChild(renderResult); 
              //else return false
          } else {
-             console.log(false);
+            renderResult.innerHTML = "";
+            renderResult.innerHTML = `No, it's not a palindrome.`;
+            resultDiv.appendChild(renderResult); 
          }     
  }
  //console.log(caseInsensitivePalindromeChecker("hhOhh"));
@@ -31,5 +37,5 @@ function caseInsensitivePalindromeChecker(text) {
 goButton.addEventListener('click', (e) => {
     e.preventDefault;
     console.log("it worked!!");
-    return caseInsensitivePalindromeChecker(string.value);
+    //return caseInsensitivePalindromeChecker(string.value);
 })
