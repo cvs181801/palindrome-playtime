@@ -14,7 +14,7 @@ function caseInsensitivePalindromeChecker(text) {
        //clone the array 
        originalArray = text.toLowerCase().split("");
        const clonedArray = [...originalArray];
-       const half = originalArray.length + 1;
+       const half = originalArray.length/2 + 1;
        const halfOriginal = originalArray.slice(0, half);
        console.log(halfOriginal);
        console.log(clonedArray);
