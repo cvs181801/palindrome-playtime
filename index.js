@@ -18,20 +18,20 @@ function caseInsensitivePalindromeChecker(text) {
        const halfOriginal = originalArray.slice(0, half);
        console.log("Half Original:", halfOriginal);
        
-//     //reverse the cloned array's order
+     //reverse the cloned array's order
        clonedArray.reverse();
        console.log("Cloned Array:", clonedArray);
        const halfCloned = clonedArray.slice(0, half);
        console.log("halfCloned:", halfCloned);
-//     // check to see if the first part of the cloned array matches the first part of the original array
-//     //if it is, return true
-//         if (halfCloned === halfOriginal ) {
-//             return true;
-//             //else return false
-//         } else {
-//             return false;
-//         }     
-
+     // check to see if the first part of the cloned array matches the first part of the original array
+     
+         if (halfCloned === halfOriginal ) {
+    //if it is, return true
+             console.log(true);
+             //else return false
+         } else {
+             console.log(false);
+         }     
  }
  console.log(caseInsensitivePalindromeChecker("HFLSDDSFfdd"));
 
