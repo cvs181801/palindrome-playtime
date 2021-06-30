@@ -13,9 +13,9 @@ function caseInsensitivePalindromeChecker(text) {
 
        //clone the array 
        originalArray = text.toLowerCase().split("");
-       const clonedArray = [...text.toLowerCase().split("")];
-       
-       const halfOriginal = text.slice(0, clonedArray.length + 1);
+       const clonedArray = [...originalArray];
+
+       const halfOriginal = text.slice(0, (clonedArray.length + 1));
        console.log(halfOriginal);
        console.log(clonedArray);
 //     //reverse the cloned array's order
